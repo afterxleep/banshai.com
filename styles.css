@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "InformativeWeb";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/informative/regular.eot");
+  /* IE9 Compat Modes */
+  src: url("/fonts/informative/regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("/fonts/informative/regular.woff") format("woff"), /* Modern Browsers */
+  url("/fonts/informative/regular.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("/fonts/informative/regular.svg#Informative") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "InformativeWeb";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/informative/semibold.eot");
+  /* IE9 Compat Modes */
+  src: url("/fonts/informative/semibold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("/fonts/informative/semibold.woff") format("woff"), /* Modern Browsers */
+  url("/fonts/informative/semibold.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("/fonts/informative/semibold.svg#Informative") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "InformativeWeb";
+  font-style: italic;
+  font-weight: 700;
+  src: url("/fonts/informative/bolditalic.eot");
+  /* IE9 Compat Modes */
+  src: url("/fonts/informative/bolditalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("/fonts/informative/bolditalic.woff") format("woff"), /* Modern Browsers */
+  url("/fonts/informative/bolditalic.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("/fonts/informative/bolditalic.svg#Informative") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "CourierPrimeWeb";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/courier-prime/regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Courier Prime"), url("/fonts/courier-prime/regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("/fonts/courier-prime/regular.woff") format("woff"), /* Modern Browsers */
+  url("/fonts/courier-prime/regular.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("/fonts/courier-prime/regular.svg#CourierPrime") format("svg");
+  /* Legacy iOS */
+}
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  background: #fff;
+  color: #555555;
+  font: 15px/1.8em "CourierPrimeWeb", -apple-system, "Arial", "Lucida Grande";
+}
+
+a {
+  color: #555555;
+  text-decoration: none;
+  border-bottom: 0px solid #cbdde4;
+}
+
+a::after {
+  content: "→";
+  color: #abda4d;
+  margin-left: 3px;
+  font-size: 0.85em;
+}
+
+a:hover {
+  border-bottom-width: 2px;
+}
+
+a:hover::after {
+  color: #7278c4;
+}
+
+a:active, a:focus {
+  outline: 0;
+}
+
+h1 {
+  font: 35px "InformativeWeb", -apple-system, "Arial", "Lucida Grande";
+  line-height: 1.2;
+  font-weight: normal;
+  font-style: normal;
+  margin: 50px 0;
+}
+
+main {
+  width: 61vw;
+  max-width: 610px;
+  margin: auto;
+  padding: 40px 0 30px;
+}
+
+img#hero {
+  width: 100%;
+  margin: 30px 0 40px;
+  border-radius: 2px;
+}
+
+main p {
+  margin: 10px 0 40px;
+}
+
+.signingoff {
+  margin-top: 50px;
+}
+
+ul {
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+ul li {
+  margin-bottom: 1em;
+  list-style: none;
+}
+
+ul li::before {
+  content: "› ";
+}
